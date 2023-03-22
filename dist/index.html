@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script defer src="../dist/bundle.js"></script>
+<script defer src="bundle.js"></script></head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BattleShip</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="panel">
+                <!-- <h2>You won</h2> -->
+                <!-- <button>Restart</button> -->
+                <div id="hide">
+
+                    <div class="ships">
+                        <div class="ship C" id="C" draggable="true">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="ship B" id="B" draggable="true">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="ship D" id="D" draggable="true">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="ship S" id="S" draggable="true">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="ship P" id="P" draggable="true">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <label class="custom">
+                            <input type="radio" name="orient" value="horiz" checked>
+                            <span class="horiz">Horizontally &#129058;</span>
+                        </label>
+                        <label class="custom">
+                            <input type="radio" name="orient" value="vert">
+                            <span class="vert">Vertically &#129059;</span>
+                        </label>
+                        <button id="randomize">Randomize</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="boards">
+            <div class="board-wrapper">
+                <div class="first-board"></div>
+                <div class="first-shipyard shipyard"></div>
+            </div>
+            <div class="board-wrapper">
+                <div class="second-board"></div>
+                <div class="second-shipyard shipyard"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>kkgarcia</span>
+    </footer>
+</body>
+</html>
